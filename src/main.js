@@ -3,7 +3,10 @@ import App from './App.vue'
 import router from '@/router'
 import store from '@/store'
 import VueCompositionAPI from '@vue/composition-api'
+import {vueRegister} from '@/utils/vueUtils'
+import '@/assets/mdi/' /*mdi icons*/
 
+vueRegister() /* register all base components */
 Vue.use(VueCompositionAPI)
 
 Vue.config.productionTip = false

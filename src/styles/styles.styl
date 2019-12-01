@@ -1,0 +1,22 @@
+@import 'animations'
+
+body
+   background-color:#333
+   color:white
+
+.container 
+   width:100%
+   display:flex
+   flex-wrap:wrap
+   justify-content:center
+   overflow: hidden
+
+.flex-grid
+   display: flex
+   justify-content: space-evenly
+   flex-wrap:wrap
+   & > * 
+      margin: 1rem
+for i in (0..100)
+   .pd-{i}
+      padding: i*1px

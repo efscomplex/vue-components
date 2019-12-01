@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import pages from '@/store/pages'
+import store from '@/store/pages'
 
 Vue.use(VueRouter)
 
-export default new VueRouter({
-    routes:pages,
+const router = new VueRouter({
+    routes:store.state.pages,
+    mode: 'history'
 })
+
+export default router
